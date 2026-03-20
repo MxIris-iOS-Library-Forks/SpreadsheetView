@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SpreadsheetView
+@testable import SpreadsheetViewModule
 
 class ScrollTests: XCTestCase {
     override func setUp() {

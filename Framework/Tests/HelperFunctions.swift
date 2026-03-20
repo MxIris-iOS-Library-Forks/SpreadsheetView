@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SpreadsheetView
+@testable import SpreadsheetViewModule
 
 func waitRunLoop(secs: TimeInterval = 0) {
     RunLoop.main.run(until: Date(timeIntervalSinceNow: secs))

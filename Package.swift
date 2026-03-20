@@ -8,21 +8,21 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SpreadsheetView",
-            targets: ["SpreadsheetView"]
+            name: "SpreadsheetViewModule",
+            targets: ["SpreadsheetViewModule"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SpreadsheetView",
+            name: "SpreadsheetViewModule",
             path: "Framework/Sources",
             exclude: ["Info.plist", "SpreadsheetView.h"]
         ),
         .testTarget(
             name: "SpreadsheetViewTests",
-            dependencies: ["SpreadsheetView"],
+            dependencies: ["SpreadsheetViewModule"],
             path: "Framework/Tests",
             exclude: ["Info.plist", "HostApp"]
         ),
